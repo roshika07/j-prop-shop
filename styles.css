@@ -1,0 +1,304 @@
+/* Reset default browser styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a custom font */
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Style the header */
+header {
+    background: #e9c893ed;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+      width: 120px;
+    height: 120px;
+	
+}
+header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.7rem;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+	
+}
+
+nav ul li {
+    margin: 0 15px;
+	 display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(83,31,31);
+    font-weight:lighter;
+    transition: color 0.3s ease;
+	
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Style the main content */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero section styles */
+.hero {
+    background: url('logo.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(133, 32, 32, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(133, 32, 32, 0.2);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.5em;
+    z-index: 2;
+    position: relative;
+}
+
+.hero button {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.hero button:hover {
+    background-color: #ffa500;
+}
+
+/* About section styles */
+.about {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+	color:maroon;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #555;
+}
+.about img {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;	
+}
+.about-image{
+	border: 5px solid #555;
+	border-radius: 10%;
+}
+.column {
+  float: left;
+  width: 43.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* product section styles */
+.product {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+	color:maroon;
+	text-align:center;
+}
+.product h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+
+}
+/* contact section style*/
+.product img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; 
+  border: 5px solid #555;
+  border-radius: 10%;
+}
+/* contact section style*/
+.contact-page{
+    background: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	text-align:center;
+}
+
+.contact-page h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+	color:maroon;
+	
+}
+.contact-page h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+
+}
+.contact-page p{
+	font-family:'Arial', sans-serif;
+	
+}
+.contact-image {
+        max-width:30%; /* Ensure image fits container */
+        width: 30%;
+		float:center;
+    }
+.contact-info {
+	text-align:left;
+	
+}
+
+/* Footer styles */
+footer {
+    background-color: #e9c893ed;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #444;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Product page specific styles */
+main.product-page ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main.product-page ul li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main.product-page ul li ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+main.product-page ul li ul li {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Adding a dark mode toggle */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-mode nav ul li a {
+    color: #e0e0e0;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #ffd700;
+}
+
+.dark-mode .about, .dark-mode .hero, .dark-mode .product-page ul li {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-mode .hero button {
+    background-color: #ffa500;
+    color: #333;
+}
